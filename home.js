@@ -4,7 +4,6 @@ const shortcutAddCancleBtn = document.querySelector("#shortcutAdd #btn .cancle-b
 const shortcutAddActionBtn = document.querySelector("#shortcutAdd #btn .cancle-btn + button");
 const shortcutAddNameInput = document.querySelector("#shortcutAdd #name input");
 const shortcutAddUrlInput = document.querySelector("#shortcutAdd #url input");
-
 const shortcutDeleteBtn = document.querySelector("#shortcut #shortcutDeleteBtn");
 /* 바로가기 추가 */
 
@@ -79,7 +78,7 @@ function shortcutDeleteBtnBack(e) {
 
 function shortcutDeleteBtnVisible(e) {
     VisibleDelay(e.target.querySelector(".shortcutDeleteBtn"));
-    // e.target.querySelector(".shortcutDeleteBtn").classList.remove('hidden');
+    e.target.querySelector(".shortcutDeleteBtn").classList.remove('hidden');
     e.target.querySelector(".shortcutDeleteBtn").addEventListener("mouseover", (e)=>{
         UnvisibleDelay(e.target);
         console.log('event');
